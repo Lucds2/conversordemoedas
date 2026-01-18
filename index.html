@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Conversor de Moedas</title>
+  </head>
+  <body>
+    <img
+      id="img-logo-convert"
+      src="./assets/logo.gif"
+      alt="Logo Conversor de moedas"
+    />
+    <main>
+      <section>
+        <label class="label-currency-actual" for="conversor"
+          >Converter <b>de</b>:</label
+        >
+        <select name="currency-actual" class="select-currency-actual">
+          <option value="real">R$ Real</option>
+          <option value="dolar">US$ Dólar Americano</option>
+          <option value="euro">€ Euro</option>
+          <option value="libra">£ Libra</option>
+          <option value="bitcoin">₿ Bitcoin</option>
+        </select>
+        <label class="label-currency-convert" for="convert-to">Converter <b>para</b>:</label>
+        <select name="currency-conver" class="select-currency-convert">
+          <option value="dolar">US$ Dólar Americano</option>
+          <option value="real">R$ Real</option>
+          <option value="euro">€ Euro</option>
+          <option value="libra">£ Libra</option>
+          <option value="bitcoin">₿ Bitcoin</option>
+        </select>
+        <label  class="label-valor" for="nome valor">Valor a <b>Converter</b>:</label>
+        <input class="input-currency" type="text" placeholder="10000" />
+        <button>Converter</button>
+        <div class="section-convert">
+        <div class="currency-convert">
+          <img
+            class="img-currency-convert"
+            src="./assets/brasil 2.png"
+            alt="Imagem moeda a ser convetida"
+          />
+          <p id="currency-bandeira-convert">Real</p>
+          <p class="txt-convert">R$ 0.00</p>
+        </div>
+        <img class="arrow" src="./assets/Vector.png" alt="arrow" />
+        <div class="currency-converted">
+          <img class="flag-converted"
+            src="./assets/estados-unidos (1) 1.png"
+            alt="Imagem moeda convertida"
+          />
+          <p id="currency-bandeira-converted">Dólar Americano</p>
+          <p class="txt-converted">$ 0,00</p>
+        </div>
+        </div>
+        <footer>
+          <p id="foot">
+            Direitos Reservados - Luciano dos Santos - (41)98400-0638
+          </p>
+        </footer>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
